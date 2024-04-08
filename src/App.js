@@ -1,36 +1,43 @@
 import logo from "./logo.svg";
 //User
 import DefaultLayout from 'component/web/layout/HomePage/DefaultLayout';
-import pageGuest from 'features/web/guest/index';
+import pageGuest from 'features/web/index';
 // import NotFound from 'features/web/NotFound';
 import React, { Suspense } from 'react';
-
-import Home from 'features/web/guest/homepage';
+import HomePage from 'features/web/guest/homepage';
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
-  Navigate,
+  Routes
 } from "react-router-dom";
 
 function App() {
+  const Page = [
 
-  // useEffect(() => {
-  //   ReactGA.pageview(window.location.pathname + window.location.search);
-  // }, []);
-  // function
-  const showPageGuest = (page) => {
-    if (page.length > 0) {
-      return page.map((page, index) => <Route key={index} exact={page.exact} path={page.path} component={page.main} />);
+    // {
+    //   path: ['/', '/home'],
+    //   exact: true,
+    //   main: HomePage,
+    // },
+    {
+      path: ['/ss'],
+      exact: true,
+      main: <>Hello</>,
+    }
+  
+  ];
+  const showPageGuest = (pages) => {
+    if (pages.length > 0) {
+      return pages.map((page, index) => <Route key={index} exact={page.exact} path={page.path} component={page.main} />);
     }
   };
-
+  console.log(showPageGuest(Page));
   return (
     <div className="App">
       <DefaultLayout>
         <Routes>
-          {/* {showPageGuest(pageGuest)} */}
-          <Route path="/home" component={<Home/>} />
+          {/* {showPageGuest(Page)} */}
+          <Route path="/home" component={<HomePage/>} />
           {/* <Route path="/*" component={NotFound} exact /> */}
           {/* <Navigate to="/" from="/" /> */}
         </Routes>
