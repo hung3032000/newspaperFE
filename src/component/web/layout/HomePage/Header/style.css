@@ -1,0 +1,11 @@
+.brand-banner{
+    width: 200px;
+    height: 50px;
+}
+
+.login-btn{
+    display: block;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    color: #ffffff;
+}
