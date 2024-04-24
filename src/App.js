@@ -6,14 +6,15 @@ import React, { Suspense } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Routes
+  Routes,
+  Link
 } from "react-router-dom";
 
 function App() {
 
   const showPageGuest = (pages) => {
     if (pages.length > 0) {
-      return pages.map((page, index) => <Route key={index}  path="/home" element={page.main} />);
+      return pages.map((page, index) => <Route key={index}  path={page.path} element={page.main} />);
     }
   };
   return (
@@ -23,7 +24,7 @@ function App() {
           {showPageGuest(pageGuest)}
           {/* <Route path="/home" element={<HomePage/>} /> */}
           {/* <Route path="/*" component={NotFound} exact /> */}
-          {/* <Navigate to="/" from="/" /> */}
+          {/* <Link to="/" from="/" /> */}
         </Routes>
       </DefaultLayout>
     </div>
