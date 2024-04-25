@@ -13,23 +13,16 @@ const Footer = function (props) {
                                 <img src="images/version/tech-footer-logo.png" alt="" className="img-fluid">
 
                                 </a> */}
-                                <p>Tech Blog is a technology blog, we sharing marketing, news and gadget articles.</p>
+                                <p>Một cái blog hoặc diary chẳng hạn? Viết cái mẹ gì chả được. Thử đi làm mọi thứ mình thích =))))))))))))))))))))))))))</p>
                                 <div className="social">
                                     <a href="!#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i className="fa fa-facebook"></i></a>              
-                                    <a href="!#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i className="fa fa-twitter"></i></a>
-                                    <a href="!#" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i className="fa fa-instagram"></i></a>
-                                    <a href="!#" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i className="fa fa-google-plus"></i></a>
-                                    <a href="!#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i className="fa fa-pinterest"></i></a>
                                 </div>
-
-                                <hr className="invis"></hr>
-
-                                <div className="newsletter-widget text-left">
+                                {/* <div className="newsletter-widget text-left">
                                     <form className="form-inline">
                                         <input type="text" className="form-control" placeholder="Enter your email address"></input>
                                         <button type="submit" className="btn btn-primary">SUBMIT</button>
                                     </form>
-                                </div>
+                                </div> */}
                            
                             </div>
                         </div>
@@ -41,10 +34,6 @@ const Footer = function (props) {
                             <div className="link-widget">
                                 <ul>
                                     <li><a href="!#">Marketing <span>(21)</span></a></li>
-                                    <li><a href="!#">SEO Service <span>(15)</span></a></li>
-                                    <li><a href="!#">Digital Agency <span>(31)</span></a></li>
-                                    <li><a href="!#">Make Money <span>(22)</span></a></li>
-                                    <li><a href="!#">Blogging <span>(66)</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -56,10 +45,6 @@ const Footer = function (props) {
                             <div className="link-widget">
                                 <ul>
                                     <li><a href="!#">About us</a></li>
-                                    <li><a href="!#">Advertising</a></li>
-                                    <li><a href="!#">Write for us</a></li>
-                                    <li><a href="!#">Trademark</a></li>
-                                    <li><a href="!#">License & Help</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -69,7 +54,7 @@ const Footer = function (props) {
                 <div className="row">
                     <div className="col-md-12 text-center">
                         <br></br>
-                        <div className="copyright">&copy; Tech Blog. Design: <a href="http://html.design">HTML Design</a>.</div>
+                        <div className="copyright">&copy; Báleygr Blog. Design: <a href="home">Báleygr</a>.</div>
                     </div>
                 </div>
             </div>

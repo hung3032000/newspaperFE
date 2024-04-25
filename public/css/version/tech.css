@@ -23,7 +23,7 @@ body,
 .dropdown-item,
 .form-control,
 p {
-    font-family: 'Poppins', serif !important;
+    font-family: 'Roboto', serif !important;
 }
 
 h1,
@@ -206,7 +206,7 @@ h5 {
 }
 
 .footer p {
-    color: #999999 !important;
+    color: #fff !important;
 }
 
 .footer a {
@@ -329,4 +329,7 @@ a:focus {
         width: 100%;
         display: block;
     }
+}
+.copyright{
+    color: #fff;
 }
